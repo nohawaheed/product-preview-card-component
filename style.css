@@ -1,0 +1,134 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+main .card {
+  margin: auto;
+  height: auto;
+  background-color: hsl(0, 0%, 100%);
+  width: 50%;
+  border-radius: 0.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main .card img {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 50%;
+  object-fit: fill;
+  border-radius: 1em 0em 0em 1em;
+}
+
+.content {
+  padding: 2em;
+}
+.content .category {
+  color: hsl(228, 12%, 48%);
+  font-family: Montserrat;
+  font-size: small;
+  letter-spacing: 0.3rem;
+}
+
+h1 {
+  color: hsl(212, 21%, 14%);
+  font-family: Fraunces;
+  font-size: 2.5rem;
+}
+
+p {
+  color: hsl(228, 12%, 48%);
+  font-family: Montserrat;
+  font-size: 1.1em;
+  line-height: 1.5rem;
+}
+
+.price {
+  color: hsl(158, 36%, 37%);
+  font-family: Fraunces;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1.5rem 0rem;
+}
+.price s {
+  color: hsl(228, 12%, 48%);
+  font-size: small;
+  font-weight: normal;
+  padding-left: 1.5rem;
+}
+
+button {
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  font-family: Montserrat;
+  font-weight: 500;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 0.5em;
+  border: 1em solid hsl(158, 36%, 37%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button .icon {
+  padding-right: 0.5rem;
+}
+button .icon img {
+  width: 100%;
+  height: auto;
+}
+
+.perfume-image:after {
+  content: "";
+  background-image: url("images/image-product-desktop.jpg");
+  display: block;
+  background-size: 100% 100%;
+  height: 100%;
+  border-radius: 0.5em 0em 0em 0.5em;
+}
+
+@media (min-width: 23em) and (max-width: 48em) {
+  .card {
+    width: 90% !important;
+    height: 90% !important;
+    border-radius: 0.5em !important;
+    grid-template-columns: unset !important;
+    grid-template-rows: 1fr 1fr !important;
+  }
+  .perfume-image:after {
+    background-image: url("images/image-product-mobile.jpg");
+    border-radius: 0.5em 0.5em 0em 0em;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 0.83em;
+  }
+}
+@media (min-width: 48em) and (max-width: 64em) {
+  .card {
+    width: 80% !important;
+  }
+}
+@media (min-width: 64em) and (max-width: 85em) {
+  .card {
+    width: 60% !important;
+  }
+}
+button:hover {
+  cursor: pointer;
+  background-color: hsl(156, 42%, 18%);
+  border: 1em solid hsl(156, 42%, 18%);
+}
+
+/*# sourceMappingURL=style.css.map */
