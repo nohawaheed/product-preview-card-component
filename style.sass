@@ -30,13 +30,13 @@ body
           border-radius: 0.5em 0em 0em 0.5em
 
 .content
-      padding: 2rem
-      width: 50%
-      .category
-        color:$dark-grayish-blue
-        font-family: Montserrat
-        font-size: small
-        letter-spacing: 0.3rem
+    padding: 2rem
+    width: 50%
+    .category
+      color:$dark-grayish-blue
+      font-family: Montserrat
+      font-size: small
+      letter-spacing: 0.3rem
 
 
 h1 
@@ -90,30 +90,28 @@ button
                   
 
 @media screen and (max-width: 768px)
-                        .card
-                            border-radius: 0.5em !important
-                            flex-direction: column
-                            .image
-                                width:100% !important
-                                img
-                                  border-radius: 0.5em 0.5em 0em 0em !important
-                            .content
-                                  width:100%
+    .card
+        border-radius: 0.5em !important
+        flex-direction: column
+        .image
+            width:100% !important
+            img
+              border-radius: 0.5em 0.5em 0em 0em !important
+        .content
+              width:100% 
 
-                        h1
-                          font-size: 1.8rem 
-                        p
-                          font-size: unset
+    h1
+      font-size: 1.8rem
                         
 
                       
 
 button:hover
-          cursor: pointer
-          background-color: $hover-dark-cyan
-          border: 1em solid $hover-dark-cyan
+    cursor: pointer
+    background-color: $hover-dark-cyan
+    border: 1em solid $hover-dark-cyan
 button:before
-          content: ""
-          background-image: url('images/icon-cart.svg')
-          width: 15px
-          height: 16px
+    content: ""
+    background-image: url('images/icon-cart.svg')
+    width: 15px
+    height: 16px

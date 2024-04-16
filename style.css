@@ -109,9 +109,6 @@ button .icon img {
   h1 {
     font-size: 1.8rem;
   }
-  p {
-    font-size: unset;
-  }
 }
 button:hover {
   cursor: pointer;
